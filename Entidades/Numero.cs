@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Entidades
@@ -45,9 +46,10 @@ namespace Entidades
 
         public string BinarioDecimal(string binario)
         {
+            if (Regex.Match(binario, "[^01]").Success)
+                return "Valor Invalido";
             this.SetNumero(binario);
-            this.numero = (TomarEnteroPositivo(this.numero));
-            NumeroBinario numeroBinario = this.numero.ToString();
+            NumeroBinario numeroBinario = (TomarEnteroPositivo(this.numero)).ToString();
             return ((double)Conversor.BinarioDecimal(numeroBinario)).ToString();
         }
 
@@ -60,6 +62,8 @@ namespace Entidades
         public string DecimalBinario(string numero)
         {
             this.SetNumero(numero);
+            if (numero != "0" && this.numero == 0)
+                return "Valor Invalido";
             return DecimalBinario(this.numero);
         }
 

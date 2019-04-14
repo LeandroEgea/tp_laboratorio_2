@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Entidades
@@ -13,6 +14,8 @@ namespace Entidades
 
         private NumeroBinario(string numero)
         {
+            if (!Regex.Match(numero, "/^[01] +$").Success)
+                this.numero = "0";
             this.numero = numero;
         }
 
@@ -29,12 +32,6 @@ namespace Entidades
         public static NumeroBinario operator +(NumeroBinario numeroBinario, NumeroDecimal numeroDecimal)
         {
             NumeroDecimal decim = numeroDecimal + numeroBinario;
-            return Conversor.DecimalBinario(decim);
-        }
-
-        public static NumeroBinario operator -(NumeroBinario numeroBinario, NumeroDecimal numeroDecimal)
-        {
-            NumeroDecimal decim = numeroDecimal - numeroBinario;//FIX
             return Conversor.DecimalBinario(decim);
         }
 

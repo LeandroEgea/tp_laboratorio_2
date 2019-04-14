@@ -11,12 +11,12 @@ namespace Entidades
     {
         public static NumeroBinario DecimalBinario(NumeroDecimal numeroDecimal)
         {
-            int numero = (int)(double)numeroDecimal;
+            double numero = (double)numeroDecimal;
             string binario = "";
             for (int i = 0; numero > 0; i++)
             {
                 binario += (numero % 2).ToString();
-                numero = numero / 2;
+                numero = Math.Floor(numero / 2);
             }
             char[] arrayBinario = binario.ToCharArray();
             Array.Reverse(arrayBinario);
@@ -26,7 +26,7 @@ namespace Entidades
         {
             char[] arrayBinario = ((string)binario).ToCharArray();
             Array.Reverse(arrayBinario);
-            int numero = 0;
+            double numero = 0;
             for (int i = 0; i < arrayBinario.Length; i++)
             {
                 if (arrayBinario[i] == '1')

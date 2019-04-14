@@ -25,3 +25,4 @@ C:\src\tp_laboratorio_2\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplet
 C:\src\tp_laboratorio_2\MiCalculadora\obj\Debug\MiCalculadora.exe
 C:\src\tp_laboratorio_2\MiCalculadora\obj\Debug\MiCalculadora.pdb
 C:\src\tp_laboratorio_2\MiCalculadora\bin\Debug\Entidades.dll
+C:\src\tp_laboratorio_2\MiCalculadora\obj\Debug\MiCalculadora.Resultado.resources
