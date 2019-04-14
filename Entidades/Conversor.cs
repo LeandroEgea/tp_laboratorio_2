@@ -22,12 +22,12 @@ namespace Entidades
                 binario = "0";
             char[] arrayBinario = binario.ToCharArray();
             Array.Reverse(arrayBinario);
-            string asdf = new string(arrayBinario);
-            return asdf;
+            return new string(arrayBinario);
         }
         public static NumeroDecimal BinarioDecimal(NumeroBinario binario)
         {
-            char[] arrayBinario = ((string)binario).ToCharArray();
+            string asdf = (string)binario;
+            char[] arrayBinario = (asdf).ToCharArray();
             Array.Reverse(arrayBinario);
             double numero = 0;
             for (int i = 0; i < arrayBinario.Length; i++)

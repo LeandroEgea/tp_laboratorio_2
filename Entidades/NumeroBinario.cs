@@ -14,7 +14,7 @@ namespace Entidades
 
         private NumeroBinario(string numero)
         {
-            if (!Regex.Match(numero, "/^[01] +$").Success)
+            if (Regex.Match(numero, "[^01]").Success)
                 this.numero = "0";
             this.numero = numero;
         }

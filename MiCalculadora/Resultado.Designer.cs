@@ -54,6 +54,7 @@
             this.MinimizeBox = false;
             this.Name = "Resultado";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Resultado";
             this.ResumeLayout(false);
             this.PerformLayout();
