@@ -42,6 +42,7 @@
             // txtNumero1
             // 
             this.txtNumero1.Location = new System.Drawing.Point(3, 41);
+            this.txtNumero1.MaxLength = 99;
             this.txtNumero1.Name = "txtNumero1";
             this.txtNumero1.Size = new System.Drawing.Size(109, 20);
             this.txtNumero1.TabIndex = 0;
@@ -66,6 +67,7 @@
             // txtNumero2
             // 
             this.txtNumero2.Location = new System.Drawing.Point(233, 42);
+            this.txtNumero2.MaxLength = 99;
             this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(109, 20);
             this.txtNumero2.TabIndex = 2;
@@ -123,7 +125,7 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(252, 9);
+            this.lblResultado.Location = new System.Drawing.Point(20, 9);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblResultado.Size = new System.Drawing.Size(13, 13);

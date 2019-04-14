@@ -45,10 +45,10 @@ namespace Entidades
 
         public string BinarioDecimal(string binario)
         {
-            //TODO validar
-            //NumeroBinario numeroBinario = binario;
-            //double asdf = (double)Conversor.BinarioDecimal(binario);
-            return "";
+            this.SetNumero(binario);
+            this.numero = (TomarEnteroPositivo(this.numero));
+            NumeroBinario numeroBinario = this.numero.ToString();
+            return ((double)Conversor.BinarioDecimal(numeroBinario)).ToString();
         }
 
         public string DecimalBinario(double numero)
@@ -59,8 +59,8 @@ namespace Entidades
 
         public string DecimalBinario(string numero)
         {
-            double doubleNumero = ValidarNumero(numero);//TODO
-            return DecimalBinario(doubleNumero);
+            this.SetNumero(numero);
+            return DecimalBinario(this.numero);
         }
 
         private double TomarEnteroPositivo(double numero)
@@ -86,6 +86,16 @@ namespace Entidades
         public static double operator /(Numero n1, Numero n2)
         {
             return n1.numero / n2.numero;
+        }
+
+        public static bool operator ==(Numero n1, Numero n2)
+        {
+            return n1.numero == n2.numero;
+        }
+
+        public static bool operator !=(Numero n1, Numero n2)
+        {
+            return !(n1 == n2);
         }
     }
 }

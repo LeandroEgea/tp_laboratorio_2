@@ -11,10 +11,9 @@ namespace Entidades
     {
         public static NumeroBinario DecimalBinario(NumeroDecimal numeroDecimal)
         {
-            int i;
             int numero = (int)(double)numeroDecimal;
             string binario = "";
-            for (i = 0; numero > 0; i++)
+            for (int i = 0; numero > 0; i++)
             {
                 binario += (numero % 2).ToString();
                 numero = numero / 2;

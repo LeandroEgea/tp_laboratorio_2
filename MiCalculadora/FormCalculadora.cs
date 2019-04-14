@@ -33,7 +33,12 @@ namespace MiCalculadora
 
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            this.lblResultado.Text = Calculadora.Operar(new Numero(txtNumero1.Text), new Numero(txtNumero2.Text), this.cmbOperador.Text).ToString();
+            this.lblResultado.Text = Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text).ToString();
+        }
+
+        private double Operar(string numero1, string numero2, string operador)
+        {
+            return Calculadora.Operar(new Numero(numero1), new Numero(numero2), operador);
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -43,14 +48,12 @@ namespace MiCalculadora
 
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-            Numero numero = new Numero();
-            this.lblResultado.Text = numero.DecimalBinario(this.lblResultado.Text);
+            this.lblResultado.Text = new Numero().DecimalBinario(this.lblResultado.Text);
         }
 
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
-            Numero numero = new Numero();
-            this.lblResultado.Text = numero.BinarioDecimal(this.lblResultado.Text);
+            this.lblResultado.Text = new Numero().BinarioDecimal(this.lblResultado.Text);
         }
     }
 }

@@ -34,7 +34,7 @@ namespace Entidades
 
         public static NumeroBinario operator -(NumeroBinario numeroBinario, NumeroDecimal numeroDecimal)
         {
-            NumeroDecimal decim = numeroDecimal - numeroBinario;
+            NumeroDecimal decim = numeroDecimal - numeroBinario;//FIX
             return Conversor.DecimalBinario(decim);
         }
 
