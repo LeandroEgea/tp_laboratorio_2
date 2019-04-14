@@ -42,11 +42,10 @@
             // txtNumero1
             // 
             this.txtNumero1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero1.Location = new System.Drawing.Point(3, 29);
+            this.txtNumero1.Location = new System.Drawing.Point(3, 31);
             this.txtNumero1.MaxLength = 99;
-            this.txtNumero1.Multiline = true;
             this.txtNumero1.Name = "txtNumero1";
-            this.txtNumero1.Size = new System.Drawing.Size(94, 28);
+            this.txtNumero1.Size = new System.Drawing.Size(94, 26);
             this.txtNumero1.TabIndex = 0;
             // 
             // cmbOperador
@@ -70,11 +69,10 @@
             // txtNumero2
             // 
             this.txtNumero2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero2.Location = new System.Drawing.Point(203, 29);
+            this.txtNumero2.Location = new System.Drawing.Point(202, 31);
             this.txtNumero2.MaxLength = 99;
-            this.txtNumero2.Multiline = true;
             this.txtNumero2.Name = "txtNumero2";
-            this.txtNumero2.Size = new System.Drawing.Size(94, 28);
+            this.txtNumero2.Size = new System.Drawing.Size(94, 26);
             this.txtNumero2.TabIndex = 2;
             // 
             // btnOperar

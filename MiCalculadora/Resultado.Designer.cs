@@ -34,12 +34,12 @@
             // lblResultadoLargo
             // 
             this.lblResultadoLargo.AutoSize = true;
-            this.lblResultadoLargo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblResultadoLargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultadoLargo.Location = new System.Drawing.Point(841, 0);
+            this.lblResultadoLargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoLargo.Location = new System.Drawing.Point(12, 9);
+            this.lblResultadoLargo.MaximumSize = new System.Drawing.Size(210, 0);
             this.lblResultadoLargo.Name = "lblResultadoLargo";
-            this.lblResultadoLargo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblResultadoLargo.Size = new System.Drawing.Size(20, 24);
+            this.lblResultadoLargo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblResultadoLargo.Size = new System.Drawing.Size(15, 16);
             this.lblResultadoLargo.TabIndex = 0;
             this.lblResultadoLargo.Text = "0";
             // 
@@ -47,13 +47,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 30);
+            this.ClientSize = new System.Drawing.Size(231, 90);
             this.Controls.Add(this.lblResultadoLargo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Resultado";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Resultado";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -18,9 +18,12 @@ namespace Entidades
                 binario += (numero % 2).ToString();
                 numero = Math.Floor(numero / 2);
             }
+            if (binario.Equals(""))
+                binario = "0";
             char[] arrayBinario = binario.ToCharArray();
             Array.Reverse(arrayBinario);
-            return new string(arrayBinario);
+            string asdf = new string(arrayBinario);
+            return asdf;
         }
         public static NumeroDecimal BinarioDecimal(NumeroBinario binario)
         {
