@@ -8,6 +8,13 @@ namespace Entidades
 {
     public class Calculadora
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <param name="operador"></param>
+        /// <returns></returns>
         public static double Operar(Numero num1, Numero num2, string operador)
         {
             operador = ValidarOperador(operador);
