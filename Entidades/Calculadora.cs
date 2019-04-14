@@ -20,7 +20,7 @@ namespace Entidades
                 case "*":
                     return num1 * num2;
                 case "/":
-                    if (operador.Equals("/") && num2 == new Numero(0))
+                    if (operador.Equals("/") && num2 == 0)
                         return double.MinValue;
                     else
                         return num1 / num2;

@@ -44,12 +44,12 @@ namespace Entidades
             }
         }
 
+        //nunca puede venir un negativo 
         public string BinarioDecimal(string binario)
         {
             if (Regex.Match(binario, "[^01]").Success)
                 return "Valor Invalido";
-            this.SetNumero(binario);
-            NumeroBinario numeroBinario = (TomarEnteroPositivo(this.numero)).ToString();
+            NumeroBinario numeroBinario = binario;
             return ((double)Conversor.BinarioDecimal(numeroBinario)).ToString();
         }
 
@@ -92,14 +92,19 @@ namespace Entidades
             return n1.numero / n2.numero;
         }
 
-        public static bool operator ==(Numero n1, Numero n2)
+        public static explicit operator double(Numero n1)
         {
-            return n1.numero == n2.numero;
+            return n1.numero;
         }
 
-        public static bool operator !=(Numero n1, Numero n2)
+        public static bool operator ==(Numero n1, double doubleValue)
         {
-            return !(n1 == n2);
+            return n1.numero == doubleValue;
+        }
+
+        public static bool operator !=(Numero n1, double doubleValue)
+        {
+            return !(n1 == doubleValue);
         }
     }
 }
