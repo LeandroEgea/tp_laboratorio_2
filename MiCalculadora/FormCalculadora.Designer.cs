@@ -41,42 +41,47 @@
             // 
             // txtNumero1
             // 
-            this.txtNumero1.Location = new System.Drawing.Point(3, 41);
+            this.txtNumero1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumero1.Location = new System.Drawing.Point(3, 43);
             this.txtNumero1.MaxLength = 99;
+            this.txtNumero1.Multiline = true;
             this.txtNumero1.Name = "txtNumero1";
-            this.txtNumero1.Size = new System.Drawing.Size(109, 20);
+            this.txtNumero1.Size = new System.Drawing.Size(109, 32);
             this.txtNumero1.TabIndex = 0;
             // 
             // cmbOperador
             // 
             this.cmbOperador.DropDownHeight = 108;
+            this.cmbOperador.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbOperador.FormattingEnabled = true;
             this.cmbOperador.IntegralHeight = false;
-            this.cmbOperador.ItemHeight = 13;
+            this.cmbOperador.ItemHeight = 24;
             this.cmbOperador.Items.AddRange(new object[] {
             "+",
             "-",
             "*",
             "/"});
-            this.cmbOperador.Location = new System.Drawing.Point(143, 40);
+            this.cmbOperador.Location = new System.Drawing.Point(141, 43);
             this.cmbOperador.MaxDropDownItems = 4;
             this.cmbOperador.Name = "cmbOperador";
-            this.cmbOperador.Size = new System.Drawing.Size(66, 21);
+            this.cmbOperador.Size = new System.Drawing.Size(66, 32);
             this.cmbOperador.TabIndex = 1;
             // 
             // txtNumero2
             // 
-            this.txtNumero2.Location = new System.Drawing.Point(233, 42);
+            this.txtNumero2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumero2.Location = new System.Drawing.Point(233, 43);
             this.txtNumero2.MaxLength = 99;
+            this.txtNumero2.Multiline = true;
             this.txtNumero2.Name = "txtNumero2";
-            this.txtNumero2.Size = new System.Drawing.Size(109, 20);
+            this.txtNumero2.Size = new System.Drawing.Size(109, 32);
             this.txtNumero2.TabIndex = 2;
             // 
             // btnOperar
             // 
-            this.btnOperar.Location = new System.Drawing.Point(3, 82);
+            this.btnOperar.Location = new System.Drawing.Point(3, 90);
             this.btnOperar.Name = "btnOperar";
-            this.btnOperar.Size = new System.Drawing.Size(109, 36);
+            this.btnOperar.Size = new System.Drawing.Size(109, 28);
             this.btnOperar.TabIndex = 3;
             this.btnOperar.Text = "Operar";
             this.btnOperar.UseVisualStyleBackColor = true;
@@ -84,9 +89,9 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(118, 82);
+            this.btnLimpiar.Location = new System.Drawing.Point(118, 90);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(109, 36);
+            this.btnLimpiar.Size = new System.Drawing.Size(109, 28);
             this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -94,9 +99,9 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(233, 82);
+            this.btnCerrar.Location = new System.Drawing.Point(233, 90);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(109, 36);
+            this.btnCerrar.Size = new System.Drawing.Size(109, 28);
             this.btnCerrar.TabIndex = 5;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -104,9 +109,9 @@
             // 
             // btnConvertirABinario
             // 
-            this.btnConvertirABinario.Location = new System.Drawing.Point(23, 124);
+            this.btnConvertirABinario.Location = new System.Drawing.Point(23, 132);
             this.btnConvertirABinario.Name = "btnConvertirABinario";
-            this.btnConvertirABinario.Size = new System.Drawing.Size(143, 36);
+            this.btnConvertirABinario.Size = new System.Drawing.Size(143, 28);
             this.btnConvertirABinario.TabIndex = 6;
             this.btnConvertirABinario.Text = "Convertir A Binario";
             this.btnConvertirABinario.UseVisualStyleBackColor = true;
@@ -114,9 +119,9 @@
             // 
             // btnConvertirADecimal
             // 
-            this.btnConvertirADecimal.Location = new System.Drawing.Point(172, 124);
+            this.btnConvertirADecimal.Location = new System.Drawing.Point(172, 132);
             this.btnConvertirADecimal.Name = "btnConvertirADecimal";
-            this.btnConvertirADecimal.Size = new System.Drawing.Size(143, 36);
+            this.btnConvertirADecimal.Size = new System.Drawing.Size(143, 28);
             this.btnConvertirADecimal.TabIndex = 7;
             this.btnConvertirADecimal.Text = "Convertir A Decimal";
             this.btnConvertirADecimal.UseVisualStyleBackColor = true;
@@ -125,10 +130,11 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(20, 9);
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(12, 7);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblResultado.Size = new System.Drawing.Size(13, 13);
+            this.lblResultado.Size = new System.Drawing.Size(20, 24);
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "0";
             // 
