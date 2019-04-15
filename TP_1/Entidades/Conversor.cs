@@ -9,6 +9,11 @@ namespace Entidades
 {
     class Conversor
     {
+        /// <summary>
+        /// Convierte un binario en un decimal
+        /// </summary>
+        /// <param name="binario">Numero binario a convertir</param>
+        /// <returns>Devuelve un numero decimal</returns>
         public static NumeroDecimal BinarioDecimal(NumeroBinario binario)
         {
             char[] arrayBinario = ((string)binario).ToCharArray();
@@ -30,6 +35,12 @@ namespace Entidades
             }
             return numero;
         }
+
+        /// <summary>
+        /// Convierte un decimal en un binario
+        /// </summary>
+        /// <param name="numeroDecimal">Numero decimal a convertir</param>
+        /// <returns>Devuelve un numero binario</returns>
         public static NumeroBinario DecimalBinario(NumeroDecimal numeroDecimal)
         {
             double numero = (double)numeroDecimal;

@@ -10,8 +10,15 @@ namespace Entidades
 {
     class NumeroBinario
     {
+        /// <summary>
+        /// El numero binario que se aloja en la entidad
+        /// </summary>
         private string numero;
 
+        /// <summary>
+        /// Constructor que guarda el numero tras una validacion
+        /// </summary>
+        /// <param name="numero">Numero a guardar</param>
         private NumeroBinario(string numero)
         {
             if (Regex.Match(numero, "[^01]").Success)

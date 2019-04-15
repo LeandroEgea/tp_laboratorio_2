@@ -9,8 +9,15 @@ namespace Entidades
 {
     class NumeroDecimal
     {
+        /// <summary>
+        /// El numero decimal que se aloja en la entidad
+        /// </summary>
         private double numero;
 
+        /// <summary>
+        /// Constructor que guarda el numero
+        /// </summary>
+        /// <param name="numero">Numero a guardar</param>
         private NumeroDecimal(double numero)
         {
             this.numero = numero;
