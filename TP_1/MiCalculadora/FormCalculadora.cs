@@ -81,8 +81,7 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-            string numero = new Numero().DecimalBinario(this.lblResultado.Text);
-            this.lblResultado.Text = numero;
+            this.lblResultado.Text = new Numero().DecimalBinario(this.lblResultado.Text);
             popUpResultado();
         }
 
@@ -93,8 +92,7 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
-            string numero = new Numero().BinarioDecimal(this.lblResultado.Text);
-            this.lblResultado.Text = numero.ToString();
+            this.lblResultado.Text = new Numero().BinarioDecimal(this.lblResultado.Text);
             popUpResultado();
         }
 

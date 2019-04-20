@@ -41,10 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculadora.cs" />
-    <Compile Include="Conversor.cs" />
     <Compile Include="Numero.cs" />
-    <Compile Include="NumeroBinario.cs" />
-    <Compile Include="NumeroDecimal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
