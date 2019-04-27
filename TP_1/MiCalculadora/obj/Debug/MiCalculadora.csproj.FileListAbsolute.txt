@@ -32,7 +32,6 @@ C:\src\tp_laboratorio_2\TP_1\MiCalculadora\bin\Debug\MiCalculadora.pdb
 C:\src\tp_laboratorio_2\TP_1\MiCalculadora\bin\Debug\Entidades.dll
 C:\src\tp_laboratorio_2\TP_1\MiCalculadora\bin\Debug\Entidades.pdb
 C:\src\tp_laboratorio_2\TP_1\MiCalculadora\obj\Debug\MiCalculadora.csprojAssemblyReference.cache
-C:\src\tp_laboratorio_2\TP_1\MiCalculadora\obj\Debug\MiCalculadora.Resultado.resources
 C:\src\tp_laboratorio_2\TP_1\MiCalculadora\obj\Debug\MiCalculadora.FormCalculadora.resources
 C:\src\tp_laboratorio_2\TP_1\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
 C:\src\tp_laboratorio_2\TP_1\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache

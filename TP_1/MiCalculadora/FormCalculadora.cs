@@ -104,8 +104,7 @@ namespace MiCalculadora
         {
             if (this.lblResultado.Text.Length > 28)
             {
-                Form resultado = new Resultado(this.lblResultado.Text);
-                resultado.ShowDialog();
+                MessageBox.Show(this.lblResultado.Text);
             }
         }
     }
