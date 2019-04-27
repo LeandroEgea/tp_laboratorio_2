@@ -102,7 +102,7 @@ namespace MiCalculadora
         /// </summary>
         private void popUpResultado()
         {
-            if (this.lblResultado.Text.Length > 28)
+            if (this.lblResultado.Width > this.Width)
             {
                 MessageBox.Show(this.lblResultado.Text);
             }
