@@ -61,6 +61,7 @@ namespace Entidades_2018
             sb.AppendFormat("MARCA           : {0}", producto.marca.ToString());
             sb.AppendLine();
             sb.AppendFormat("COLOR EMPAQUE   : {0}", producto.colorPrimarioEmpaque.ToString());
+            sb.AppendLine();
             sb.AppendLine("---------------------");
             return sb.ToString();
         }
@@ -75,6 +76,7 @@ namespace Entidades_2018
         {
             return (productoUno.codigoDeBarras == productoDos.codigoDeBarras);
         }
+
         /// <summary>
         /// Dos productos son distintos si su código de barras es distinto
         /// </summary>

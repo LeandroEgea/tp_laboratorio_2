@@ -11,10 +11,10 @@ namespace Entidades_2018
         /// <summary>
         /// Dulce con sus 3 atributos setteados
         /// </summary>
-        /// <param name="codigoDeBarras">codigoDeBarras to set</param>
         /// <param name="marca">marca to set</param>
+        /// <param name="codigoDeBarras">codigoDeBarras to set</param>
         /// <param name="colorPrimarioEmpaque">colorPrimarioEmpaque to set</param>
-        public Dulce(string codigoDeBarras, Producto.Marca marca, ConsoleColor colorPrimarioEmpaque) : base(codigoDeBarras, marca, colorPrimarioEmpaque)
+        public Dulce(Producto.Marca marca, string codigoDeBarras, ConsoleColor colorPrimarioEmpaque) : base(codigoDeBarras, marca, colorPrimarioEmpaque)
         {
 
         }

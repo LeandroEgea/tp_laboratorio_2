@@ -32,11 +32,11 @@ namespace Entidades_2018
         /// <summary>
         /// Leche con sus 4 atributos setteados (tipoDeLeche Entera por Default)
         /// </summary>
-        /// <param name="codigoDeBarras">codigoDeBarras to set</param>
         /// <param name="marca">marca to set</param>
+        /// <param name="codigoDeBarras">codigoDeBarras to set</param>
         /// <param name="colorPrimarioEmpaque">colorPrimarioEmpaque to set</param>
-        public Leche(string codigoDeBarras, Producto.Marca marca, ConsoleColor colorPrimarioEmpaque) 
-            : this(codigoDeBarras, marca, colorPrimarioEmpaque, TipoDeLeche.Entera)
+        public Leche(Producto.Marca marca, string codigoDeBarras, ConsoleColor colorPrimarioEmpaque) 
+            : this(marca, codigoDeBarras, colorPrimarioEmpaque, TipoDeLeche.Entera)
         {
 
         }
@@ -44,11 +44,11 @@ namespace Entidades_2018
         /// <summary>
         /// Leche con sus 4 atributos setteados
         /// </summary>
-        /// <param name="codigoDeBarras">codigoDeBarras to set</param>
         /// <param name="marca">marca to set</param>
+        /// <param name="codigoDeBarras">codigoDeBarras to set</param>
         /// <param name="colorPrimarioEmpaque">colorPrimarioEmpaque to set</param>
         /// <param name="tipoDeLeche">tipoDeLeche to set</param>
-        public Leche(string codigoDeBarras, Producto.Marca marca, ConsoleColor colorPrimarioEmpaque, TipoDeLeche tipoDeLeche) 
+        public Leche(Producto.Marca marca, string codigoDeBarras, ConsoleColor colorPrimarioEmpaque, TipoDeLeche tipoDeLeche) 
             : base(codigoDeBarras, marca, colorPrimarioEmpaque)
         {
             this.tipoDeLeche = tipoDeLeche;

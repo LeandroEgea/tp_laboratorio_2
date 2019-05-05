@@ -39,14 +39,12 @@ namespace Entidades_2018
         }
         #endregion
 
-        //falta de aca para abajo
-
         #region "Sobrecargas"
         /// <summary>
         /// Muestro el Changuito y TODOS los Productos
         /// </summary>
-        /// <returns></returns>
-        public string ToString()
+        /// <returns>Un string con todos los datos</returns>
+        public override string ToString()
         {
             return Changuito.Mostrar(this, TipoDeProducto.Todos);
         }
@@ -58,35 +56,36 @@ namespace Entidades_2018
         /// Expone los datos del elemento y su lista (incluidas sus herencias)
         /// SOLO del tipo requerido
         /// </summary>
-        /// <param name="c">Elemento a exponer</param>
-        /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
+        /// <param name="changuito">Elemento a exponer</param>
+        /// <param name="tipoDeProducto">Tipos de ítems de la lista a mostrar</param>
         /// <returns></returns>
-        public string Mostrar(Changuito c, ETipo tipo)
+        public static string Mostrar(Changuito changuito, TipoDeProducto tipoDeProducto)
         {
             StringBuilder sb = new StringBuilder();
-
-            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles", c.productos.Count, c.espacioDisponible);
-            sb.AppendLine("");
-            foreach (Producto v in c.productos)
+            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles", changuito.productos.Count, changuito.espacioDisponible);
+            sb.AppendLine();
+            foreach (Producto producto in changuito.productos)
             {
-                switch (tipo)
+                switch (tipoDeProducto)
                 {
-                    case ETipo.Snacks:
-                        sb.AppendLine(v.Mostrar());
+                    case TipoDeProducto.Snacks:
+                        if (producto is Snacks)
+                            sb.AppendLine(producto.Mostrar());
                         break;
-                    case ETipo.Dulce:
-                        sb.AppendLine(v.Mostrar());
+                    case TipoDeProducto.Dulce:
+                        if (producto is Dulce)
+                            sb.AppendLine(producto.Mostrar());
                         break;
-                    case ETipo.Leche:
-                        sb.AppendLine(v.Mostrar());
+                    case TipoDeProducto.Leche:
+                        if (producto is Leche)
+                            sb.AppendLine(producto.Mostrar());
                         break;
                     default:
-                        sb.AppendLine(v.Mostrar());
+                        sb.AppendLine(producto.Mostrar());
                         break;
                 }
             }
-
-            return sb;
+            return sb.ToString();
         }
         #endregion
 
@@ -94,37 +93,39 @@ namespace Entidades_2018
         /// <summary>
         /// Agregará un elemento a la lista
         /// </summary>
-        /// <param name="c">Objeto donde se agregará el elemento</param>
-        /// <param name="p">Objeto a agregar</param>
-        /// <returns></returns>
-        public static Changuito operator +(Changuito c, Producto p)
+        /// <param name="changuito">Objeto donde se agregará el elemento</param>
+        /// <param name="producto">Objeto a agregar</param>
+        /// <returns>El Changuito con el nuevo producto si se pudo agregar, o como estaba en caso contrario</returns>
+        public static Changuito operator +(Changuito changuito, Producto producto)
         {
-            foreach (Producto v in c)
+            if (changuito.productos.Count >= changuito.espacioDisponible)
+                return changuito;
+            foreach (Producto p in changuito.productos)
             {
-                if (v == p)
-                    return c;
+                if (producto == p)
+                    return changuito;
             }
-
-            c.productos.Add(p);
-            return c;
+            changuito.productos.Add(producto);
+            return changuito;
         }
+
         /// <summary>
         /// Quitará un elemento de la lista
         /// </summary>
-        /// <param name="c">Objeto donde se quitará el elemento</param>
-        /// <param name="p">Objeto a quitar</param>
-        /// <returns></returns>
-        public static Changuito operator -(Changuito c, Producto p)
+        /// <param name="changuito">Objeto donde se quitará el elemento</param>
+        /// <param name="producto">Objeto a quitar</param>
+        /// <returns>El Changuito sin el producto si se pudo quitar, o como estaba en caso contrario</returns>
+        public static Changuito operator -(Changuito changuito, Producto producto)
         {
-            foreach (Producto v in c)
+            foreach (Producto p in changuito.productos)
             {
-                if (v == p)
+                if (producto == p)
                 {
-                    break;
+                    changuito.productos.Remove(p);
+                    return changuito;
                 }
             }
-
-            return c;
+            return changuito;
         }
         #endregion
     }
