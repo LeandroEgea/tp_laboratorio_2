@@ -39,8 +39,7 @@ namespace Clases_Abstractas
             }
             set
             {
-                throw new NotImplementedException();
-                //TODO
+                throw new NotImplementedException(); //TODO
             }
         }
 
@@ -72,8 +71,7 @@ namespace Clases_Abstractas
         {
             set
             {
-                throw new NotImplementedException();
-                //TODO
+                throw new NotImplementedException();//TODO
             }
         }
 
@@ -101,26 +99,22 @@ namespace Clases_Abstractas
 
         public override string ToString()
         {
-            throw new NotImplementedException();
-            //TODO
+            throw new NotImplementedException();//TODO
         }
 
         private int ValidarDNI(ENacionalidad nacionalidad, int dato)
         {
-            throw new NotImplementedException();
-            //TODO
+            throw new NotImplementedException();//TODO
         }
 
         private int ValidarDNI(ENacionalidad nacionalidad, string dato)
         {
-            throw new NotImplementedException();
-            //TODO
+            throw new NotImplementedException();//TODO
         }
 
         private string ValidarNombreApellido(string dato)
         {
-            throw new NotImplementedException();
-            //TODO
+            throw new NotImplementedException();//TODO
         }
     }
 }
