@@ -3,29 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Clases_Abstractas;
+using EntidadesAbstractas;
 
-namespace Clases_Instanciables
+namespace EntidadesInstanciables
 {
     public sealed class Profesor : Universitario
     {
         private Queue<Universidad.EClases> clasesDelDia;
-        static Random random;
+        private static Random random;
 
-        static Profesor() //???
+        static Profesor()
+        {
+            random = new Random();
+        }
+
+        public Profesor() : this(0, null, null, null, ENacionalidad.Argentino) //TODO Esto esta mal
         {
 
         }
 
-        public Profesor()
-        {
-
-        }
-
-        public Profesor(int id, string nombre, string apellido, string dni, Universitario.ENacionalidad nacionalidad)
+        public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             : base(id, nombre, apellido, dni, nacionalidad)
         {
-
+            clasesDelDia = new Queue<Universidad.EClases>();
+            _randomClases();
         }
 
         private void _randomClases()
@@ -40,7 +41,7 @@ namespace Clases_Instanciables
 
         public static bool operator ==(Profesor i, Universidad.EClases clase)
         {
-            throw new NotImplementedException(); //TODO
+            return i.clasesDelDia.Contains(clase); //???
         }
 
         public static bool operator !=(Profesor i, Universidad.EClases clase)
@@ -48,9 +49,12 @@ namespace Clases_Instanciables
             return !(i == clase);
         }
 
-        protected override string ParticiparEnClase()
+        protected override string ParticiparEnClase() //???
         {
-            throw new NotImplementedException(); //TODO
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("CLASES DEL DÍA:");
+            sb.AppendLine(clasesDelDia.Dequeue().ToString());
+            return sb.ToString();
         }
 
         public override string ToString()
