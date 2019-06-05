@@ -10,7 +10,7 @@ namespace EntidadesAbstractas
     {
         private int legajo;
 
-        public Universitario()
+        public Universitario() //???
         {
 
         }
@@ -39,7 +39,7 @@ namespace EntidadesAbstractas
 
         public override bool Equals(object obj)
         {
-            return (obj is Universitario && this == (Universitario)obj); //???
+            return obj is Universitario && this == (Universitario)obj; //???
         }
     }
 }

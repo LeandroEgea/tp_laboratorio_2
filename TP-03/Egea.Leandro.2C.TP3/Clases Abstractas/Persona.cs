@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Excepciones;
 
 namespace EntidadesAbstractas
 {
@@ -27,7 +28,7 @@ namespace EntidadesAbstractas
             }
             set
             {
-                apellido = value;
+                apellido = ValidarNombreApellido(value);
             }
         }
 
@@ -39,7 +40,7 @@ namespace EntidadesAbstractas
             }
             set
             {
-                throw new NotImplementedException(); //TODO
+                dni = ValidarDNI(Nacionalidad, value);
             }
         }
 
@@ -63,7 +64,7 @@ namespace EntidadesAbstractas
             }
             set
             {
-                nombre = value;
+                nombre = ValidarNombreApellido(value);
             }
         }
 
@@ -71,7 +72,7 @@ namespace EntidadesAbstractas
         {
             set
             {
-                throw new NotImplementedException();//TODO
+                dni = ValidarDNI(Nacionalidad, value);
             }
         }
 
@@ -104,7 +105,23 @@ namespace EntidadesAbstractas
 
         private int ValidarDNI(ENacionalidad nacionalidad, int dato)
         {
-            throw new NotImplementedException();//TODO
+            if(dato >= 1 && dato <= 99999999)
+            {
+                if (dato <= 89999999 && !nacionalidad.Equals(ENacionalidad.Argentino))
+                {
+                    throw new NacionalidadInvalidaException(); //TODO mensaje
+                }
+                else if (dato >= 90000000 && !nacionalidad.Equals(ENacionalidad.Extranjero))
+                {
+                    throw new NacionalidadInvalidaException(); //TODO mensaje
+                }
+                else
+                    return dato;
+            }
+            else
+            {
+                throw new NotImplementedException(); //TODO
+            }
         }
 
         private int ValidarDNI(ENacionalidad nacionalidad, string dato)

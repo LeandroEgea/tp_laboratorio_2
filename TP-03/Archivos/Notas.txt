@@ -1,0 +1,7 @@
+Validacion Nombres y StringToDNI
+Guardar y leer static ???
+Leer en Universidad
+Excepciones mensajeBase y preguntar punto 10
+
+Documentar
+Unit Test
