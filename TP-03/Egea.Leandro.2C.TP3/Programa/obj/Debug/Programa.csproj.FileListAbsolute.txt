@@ -1,0 +1,15 @@
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\bin\Debug\Programa.exe.config
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\bin\Debug\Programa.exe
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\bin\Debug\Programa.pdb
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\bin\Debug\Archivos.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\bin\Debug\Clases Abstractas.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\bin\Debug\Clases Instanciables.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\bin\Debug\Excepciones.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\bin\Debug\Archivos.pdb
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\bin\Debug\Clases Abstractas.pdb
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\bin\Debug\Clases Instanciables.pdb
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\bin\Debug\Excepciones.pdb
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\obj\Debug\Programa.csprojResolveAssemblyReference.cache
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\obj\Debug\Programa.csproj.CoreCompileInputs.cache
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\obj\Debug\Programa.exe
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Programa\obj\Debug\Programa.pdb

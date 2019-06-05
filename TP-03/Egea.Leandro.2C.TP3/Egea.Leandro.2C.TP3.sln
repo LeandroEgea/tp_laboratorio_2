@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archivos", "Archivos\Archiv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programa", "Programa\Programa.csproj", "{51468DBE-B49A-4948-B213-0AE16CE74352}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test Unitarios", "Test Unitarios\Test Unitarios.csproj", "{163D7169-8C97-470F-9BE6-399EF79FB90E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{51468DBE-B49A-4948-B213-0AE16CE74352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51468DBE-B49A-4948-B213-0AE16CE74352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51468DBE-B49A-4948-B213-0AE16CE74352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{163D7169-8C97-470F-9BE6-399EF79FB90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163D7169-8C97-470F-9BE6-399EF79FB90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163D7169-8C97-470F-9BE6-399EF79FB90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163D7169-8C97-470F-9BE6-399EF79FB90E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

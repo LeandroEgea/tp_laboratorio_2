@@ -1,0 +1,19 @@
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Test Unitarios.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Test Unitarios.pdb
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Clases Abstractas.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Clases Instanciables.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Excepciones.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Clases Abstractas.pdb
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Clases Instanciables.pdb
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Excepciones.pdb
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.csprojResolveAssemblyReference.cache
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.csproj.CoreCompileInputs.cache
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.dll
+C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.pdb
