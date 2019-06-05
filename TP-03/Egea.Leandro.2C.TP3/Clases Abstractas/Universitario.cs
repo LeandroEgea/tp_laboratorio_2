@@ -22,7 +22,7 @@ namespace EntidadesAbstractas
 
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {
-            throw new NotImplementedException(); //TODO
+            return pg1.GetType().Equals(pg2.GetType()) && (pg1.legajo.Equals(pg2.legajo) || pg1.DNI.Equals(pg2.legajo)); //???
         }
 
         public static bool operator !=(Universitario pg1, Universitario pg2)

@@ -26,7 +26,8 @@ namespace Programa
             }
             try
             {
-                Alumno a3 = new Alumno(3, "José", "Gutierrez", "12234456", EntidadesAbstractas.Persona.ENacionalidad.Argentino, Universidad.EClases.Programacion, Alumno.EEstadoCuenta.Becado); gim += a3;
+                Alumno a3 = new Alumno(3, "José", "Gutierrez", "12234456", EntidadesAbstractas.Persona.ENacionalidad.Argentino, Universidad.EClases.Programacion, Alumno.EEstadoCuenta.Becado);
+                gim += a3;
             }
             catch (AlumnoRepetidoException e)
             {
@@ -79,7 +80,8 @@ namespace Programa
                 Console.WriteLine(e.Message);
             }
             Console.WriteLine(gim.ToString());
-            Console.ReadKey(); Console.Clear();
+            Console.ReadKey();
+            Console.Clear();
             try
             {
                 Universidad.Guardar(gim);
@@ -91,7 +93,9 @@ namespace Programa
             }
             try
             {
-                int jornada = 0; Jornada.Guardar(gim[jornada]); Console.WriteLine("Archivo de Jornada {0} guardado.", jornada);
+                int jornada = 0;
+                Jornada.Guardar(gim[jornada]);
+                Console.WriteLine("Archivo de Jornada {0} guardado.", jornada);
                 //Console.WriteLine(Jornada.Leer()); 
             }
             catch (ArchivosException e)
