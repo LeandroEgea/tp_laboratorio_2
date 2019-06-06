@@ -17,3 +17,26 @@ C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test 
 C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.csproj.CoreCompileInputs.cache
 C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.dll
 C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.pdb
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Test Unitarios.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Test Unitarios.pdb
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Clases Abstractas.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Clases Instanciables.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Excepciones.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Clases Abstractas.pdb
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Clases Instanciables.pdb
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Excepciones.pdb
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.csprojAssemblyReference.cache
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.csproj.CoreCompileInputs.cache
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.csproj.CopyComplete
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.pdb

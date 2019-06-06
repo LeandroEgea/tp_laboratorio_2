@@ -10,3 +10,16 @@ C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\obj\Debug
 C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CoreCompileInputs.cache
 C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.dll
 C:\zzz\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.pdb
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\bin\Debug\Clases Instanciables.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\bin\Debug\Clases Instanciables.pdb
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\bin\Debug\Archivos.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\bin\Debug\Clases Abstractas.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\bin\Debug\Excepciones.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\bin\Debug\Archivos.pdb
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\bin\Debug\Clases Abstractas.pdb
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\bin\Debug\Excepciones.pdb
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csprojAssemblyReference.cache
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CoreCompileInputs.cache
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CopyComplete
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.dll
+D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.pdb
