@@ -8,6 +8,9 @@ namespace Excepciones
 {
     public class SinProfesorException : Exception
     {
+        /// <summary>
+        /// message "No hay profesor para la clase."
+        /// </summary>
         public SinProfesorException() : base("No hay profesor para la clase.")
         {
 

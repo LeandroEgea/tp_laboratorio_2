@@ -10,6 +10,9 @@ namespace EntidadesAbstractas
 {
     public abstract class Persona
     {
+        /// <summary>
+        /// Enumerado de nacionalidades posibles
+        /// </summary>
         public enum ENacionalidad
         {
             Argentino,
@@ -69,6 +72,9 @@ namespace EntidadesAbstractas
             }
         }
 
+        /// <summary>
+        /// Transforma una cadena en un DNI mediante validacion previa
+        /// </summary>
         public string StringToDNI
         {
             set
@@ -77,11 +83,20 @@ namespace EntidadesAbstractas
             }
         }
 
+        /// <summary>
+        /// Constructor de Persona
+        /// </summary>
         public Persona()
         {
 
         }
 
+        /// <summary>
+        /// Constructor de Persona
+        /// </summary>
+        /// <param name="nombre">nombre de la Persona</param>
+        /// <param name="apellido">apellido de la Persona</param>
+        /// <param name="nacionalidad">nacionalidad de la Persona</param>
         public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
         {
             Nombre = nombre;
@@ -89,16 +104,34 @@ namespace EntidadesAbstractas
             Nacionalidad = nacionalidad;
         }
 
+        /// <summary>
+        /// Constructor de Persona
+        /// </summary>
+        /// <param name="nombre">nombre de la Persona</param>
+        /// <param name="apellido">apellido de la Persona</param>
+        /// <param name="dni">DNI de la Persona en numero</param>
+        /// <param name="nacionalidad">nacionalidad de la Persona</param>
         public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
         {
             DNI = dni;
         }
 
+        /// <summary>
+        /// Constructor de Persona
+        /// </summary>
+        /// <param name="nombre">nombre de la Persona</param>
+        /// <param name="apellido">apellido de la Persona</param>
+        /// <param name="dni">DNI de la Persona en string</param>
+        /// <param name="nacionalidad">nacionalidad de la Persona</param>
         public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
         {
             StringToDNI = dni;
         }
 
+        /// <summary>
+        /// Datos de la Persona
+        /// </summary>
+        /// <returns>String con Nombre Completo y nacionalidad</returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -109,6 +142,12 @@ namespace EntidadesAbstractas
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Valida que el DNI este entre 1 y 99.999.999. Y coincida con la nacionalidad.
+        /// </summary>
+        /// <param name="nacionalidad">nacionalidad de la Persona</param>
+        /// <param name="dato">el DNI a validar</param>
+        /// <returns>el DNI si es válido. Throws NacionalidadInvalidaException, DniInvalidoException</returns>
         private int ValidarDNI(ENacionalidad nacionalidad, int dato)
         {
             if (dato >= 1 && dato <= 99999999)
@@ -132,6 +171,12 @@ namespace EntidadesAbstractas
             }
         }
 
+        /// <summary>
+        /// Valida que el string tenga el formato valido y lo envia a ValidarDNI(ENacionalidad, int)
+        /// </summary>
+        /// <param name="nacionalidad">nacionalidad de la Persona</param>
+        /// <param name="dato">el DNI a validar en string</param>
+        /// <returns>el DNI si es válido. Throws DniInvalidoException</returns>
         private int ValidarDNI(ENacionalidad nacionalidad, string dato)
         {
             int datoEnEntero;
@@ -153,6 +198,11 @@ namespace EntidadesAbstractas
             }
         }
 
+        /// <summary>
+        /// Valida que el string sea un nombre válido.
+        /// </summary>
+        /// <param name="dato">nombre a validar</param>
+        /// <returns>el Nombre si es válido. Throws Exception</returns>
         private string ValidarNombreApellido(string dato)
         {
             Match match = Regex.Match(dato, @"^[a-zA-ZáéíóúÁÉÍÓÚ '-]+$");

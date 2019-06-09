@@ -8,6 +8,9 @@ namespace Excepciones
 {
     public class NacionalidadInvalidaException : Exception
     {
+        /// <summary>
+        /// message "La nacionalidad no es válida."
+        /// </summary>
         public NacionalidadInvalidaException() : base("La nacionalidad no es válida.")
         {
 
