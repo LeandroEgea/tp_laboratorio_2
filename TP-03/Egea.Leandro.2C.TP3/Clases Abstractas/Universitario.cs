@@ -22,7 +22,7 @@ namespace EntidadesAbstractas
 
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {
-            return pg1.GetType().Equals(pg2.GetType()) && (pg1.legajo.Equals(pg2.legajo) || pg1.DNI.Equals(pg2.legajo));
+            return pg1.GetType().Equals(pg2.GetType()) && (pg1.legajo.Equals(pg2.legajo) || pg1.DNI.Equals(pg2.DNI));
         }
 
         public static bool operator !=(Universitario pg1, Universitario pg2)
@@ -32,7 +32,11 @@ namespace EntidadesAbstractas
 
         protected virtual string MostrarDatos()
         {
-            throw new NotImplementedException(); //TODO
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(base.ToString());
+            sb.AppendFormat("LEGAJO NÚMERO: {0}", legajo);
+            sb.AppendLine();
+            return sb.ToString();
         }
 
         protected abstract string ParticiparEnClase();

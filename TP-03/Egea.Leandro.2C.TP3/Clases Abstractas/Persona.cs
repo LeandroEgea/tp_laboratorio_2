@@ -101,7 +101,12 @@ namespace EntidadesAbstractas
 
         public override string ToString()
         {
-            throw new NotImplementedException(); //TODO
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("NOMBRE COMPLETO: {0}, {1}", Apellido, Nombre);
+            sb.AppendLine();
+            sb.AppendFormat("NACIONALIDAD: {0}", Nacionalidad);
+            sb.AppendLine();
+            return sb.ToString();
         }
 
         private int ValidarDNI(ENacionalidad nacionalidad, int dato)
@@ -144,7 +149,7 @@ namespace EntidadesAbstractas
             }
             else
             {
-                throw new DniInvalidoException("El DNI excede el máximo de caracteres(8)");
+                throw new DniInvalidoException("El DNI excede el máximo de caracteres(8).");
             }
         }
 
@@ -157,7 +162,7 @@ namespace EntidadesAbstractas
             }
             else
             {
-                throw new Exception(String.Format("{0} no es un nombre válido", dato));
+                throw new Exception(String.Format("{0} no es un nombre válido.", dato));
             }
         }
     }

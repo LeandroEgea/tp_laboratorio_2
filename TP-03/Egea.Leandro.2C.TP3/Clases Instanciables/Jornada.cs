@@ -1,4 +1,5 @@
 ﻿using Archivos;
+using Excepciones;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -72,9 +73,14 @@ namespace EntidadesInstanciables
             return jornada;
         }
 
-        public static bool operator ==(Jornada j, Alumno a) //???
+        public static bool operator ==(Jornada j, Alumno a)
         {
-            return j.Alumnos.Contains(a);
+            foreach (Alumno alumno in j.Alumnos)
+            {
+                if (alumno == a)
+                    return true;
+            }
+            return false;
         }
 
         public static bool operator !=(Jornada j, Alumno a)
@@ -85,13 +91,24 @@ namespace EntidadesInstanciables
         public static Jornada operator +(Jornada j, Alumno a)
         {
             if (j != a)
+            {
                 j.Alumnos.Add(a);
-            return j;
+                return j;
+            }
+            throw new AlumnoRepetidoException();
         }
 
         public override string ToString()
         {
-            throw new NotImplementedException(); //TODO
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("CLASE DE {0} POR ", Clase);
+            sb.AppendLine(Instructor.ToString());
+            sb.AppendLine("ALUMNOS:");
+            foreach (Alumno alumno in Alumnos)
+            {
+                sb.AppendLine(alumno.ToString());
+            }
+            return sb.ToString();
         }
     }
 }

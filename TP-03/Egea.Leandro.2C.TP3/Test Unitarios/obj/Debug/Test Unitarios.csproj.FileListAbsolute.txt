@@ -60,3 +60,5 @@ C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test 
 C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.csproj.CopyComplete
 C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.dll
 C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\obj\Debug\Test Unitarios.pdb
+C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Archivos.dll
+C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Test Unitarios\bin\Debug\Archivos.pdb

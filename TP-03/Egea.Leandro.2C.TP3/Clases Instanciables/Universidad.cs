@@ -101,18 +101,17 @@ namespace EntidadesInstanciables
 
         private string MostrarDatos(Universidad uni)
         {
-            throw new NotImplementedException(); //TODO
+            return "asdf";
         }
 
         public static bool operator ==(Universidad g, Alumno a)
         {
             foreach (Alumno alumno in g.Alumnos)
             {
-                if (alumno == a) //???
+                if (alumno == a)
                     return true;
             }
             return false;
-            //return g.Instructores.Contains(i); //???
         }
 
         public static bool operator !=(Universidad g, Alumno a)
@@ -124,11 +123,10 @@ namespace EntidadesInstanciables
         {
             foreach (Profesor profesor in g.Instructores)
             {
-                if (profesor == i) //???
+                if (profesor == i)
                     return true;
             }
             return false;
-            //return g.Instructores.Contains(i); //???
         }
 
         public static bool operator !=(Universidad g, Profesor i)

@@ -37,7 +37,12 @@ namespace EntidadesInstanciables
 
         protected override string MostrarDatos()
         {
-            throw new NotImplementedException(); //TODO
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(base.ToString());
+            sb.AppendFormat("ESTADO DE CUENTA: {0}", estadoCuenta);
+            sb.AppendLine();
+            sb.AppendLine(ParticiparEnClase());
+            return sb.ToString();
         }
 
         protected override string ParticiparEnClase()
