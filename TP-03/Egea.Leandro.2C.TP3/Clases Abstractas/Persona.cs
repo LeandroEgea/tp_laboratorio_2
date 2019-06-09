@@ -210,6 +210,8 @@ namespace EntidadesAbstractas
             {
                 return dato;
             }
+            //Aca podria devolver un string vacio("") pero tiro una excepcion siguiendo
+            //el estilo del TP
             else
             {
                 throw new Exception(String.Format("{0} no es un nombre válido.", dato));
