@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Excepciones;
 using System.Threading.Tasks;
+using Archivos;
 
 namespace EntidadesInstanciables
 {
+    [Serializable]
     public class Universidad
     {
         public enum EClases
@@ -60,11 +63,20 @@ namespace EntidadesInstanciables
         {
             get
             {
-                return jornadas[i]; //???
+                if (i >= 0 && i < Jornadas.Count)
+                    return jornadas[i];
+                return null;
             }
             set
             {
-                throw new NotImplementedException(); //TODO
+                if (i >= 0 && i < Jornadas.Count)
+                {
+                    jornadas[i] = value;
+                }
+                else if (i == Jornadas.Count)
+                {
+                    jornadas.Add(value);
+                }
             }
         }
 
@@ -75,9 +87,16 @@ namespace EntidadesInstanciables
             Jornadas = new List<Jornada>();
         }
 
-        public static bool Guardar(Universidad uni) //STATIC ???
+        public static bool Guardar(Universidad uni)
         {
-            throw new NotImplementedException(); //TODO
+            return new Xml<Universidad>().Guardar("Universidad.xml", uni);
+        }
+
+        public static Universidad Leer()
+        {
+            Universidad universidad;
+            new Xml<Universidad>().Leer("Universidad.xml", out universidad);
+            return universidad;
         }
 
         private string MostrarDatos(Universidad uni)
@@ -103,7 +122,7 @@ namespace EntidadesInstanciables
 
         public static bool operator ==(Universidad g, Profesor i)
         {
-            foreach(Profesor profesor in g.Instructores)
+            foreach (Profesor profesor in g.Instructores)
             {
                 if (profesor == i) //???
                     return true;
@@ -124,7 +143,7 @@ namespace EntidadesInstanciables
                 if (profesor == clase)
                     return profesor;
             }
-            return null;
+            throw new SinProfesorException();
         }
 
         public static Profesor operator !=(Universidad u, EClases clase)
@@ -140,8 +159,11 @@ namespace EntidadesInstanciables
         public static Universidad operator +(Universidad u, Alumno a)
         {
             if (u != a)
+            {
                 u.Alumnos.Add(a);
-            return u;
+                return u;
+            }
+            throw new AlumnoRepetidoException();
         }
 
         public static Universidad operator +(Universidad u, Profesor i)
@@ -153,14 +175,20 @@ namespace EntidadesInstanciables
 
         public static Universidad operator +(Universidad g, EClases clase)
         {
-            throw new NotImplementedException(); //TODO
+            Profesor profesor = (g == clase);
+            Jornada jornada = new Jornada(clase, profesor);
+            foreach (Alumno alumno in g.alumnos)
+            {
+                if (alumno == clase)
+                    jornada.Alumnos.Add(alumno);
+            }
+            g.Jornadas.Add(jornada);
+            return g;
         }
 
         public override string ToString()
         {
             return MostrarDatos(this);
         }
-
-        //LEER STATIC ???
     }
 }

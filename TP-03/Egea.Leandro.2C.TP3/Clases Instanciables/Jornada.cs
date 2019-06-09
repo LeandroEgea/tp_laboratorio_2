@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Archivos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -59,19 +60,21 @@ namespace EntidadesInstanciables
             Instructor = instructor;
         }
 
-        public static bool Guardar(Jornada jornada) //STATIC ???
+        public static bool Guardar(Jornada jornada)
         {
-            throw new NotImplementedException(); //TODO
+            return new Texto().Guardar("Jornada.txt", jornada.ToString());
         }
 
-        public string Leer() //STATIC ???
+        public static string Leer()
         {
-            throw new NotImplementedException(); //TODO
+            string jornada;
+            new Texto().Leer("Jornada.txt", out jornada);
+            return jornada;
         }
 
-        public static bool operator ==(Jornada j, Alumno a)
+        public static bool operator ==(Jornada j, Alumno a) //???
         {
-            throw new NotImplementedException(); //TODO
+            return j.Alumnos.Contains(a);
         }
 
         public static bool operator !=(Jornada j, Alumno a)

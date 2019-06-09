@@ -54,7 +54,7 @@ namespace Test_Unitarios
             universidad[0] = jornada;
             // Assert
             Assert.IsNotNull(universidad[0]);
-            Assert.AreSame(profesor, universidad[0]);
+            Assert.AreSame(jornada, universidad[0]);
         }
     }
 }

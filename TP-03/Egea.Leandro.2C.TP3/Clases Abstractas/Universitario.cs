@@ -10,7 +10,7 @@ namespace EntidadesAbstractas
     {
         private int legajo;
 
-        public Universitario() //???
+        public Universitario()
         {
 
         }
@@ -22,7 +22,7 @@ namespace EntidadesAbstractas
 
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {
-            return pg1.GetType().Equals(pg2.GetType()) && (pg1.legajo.Equals(pg2.legajo) || pg1.DNI.Equals(pg2.legajo)); //???
+            return pg1.GetType().Equals(pg2.GetType()) && (pg1.legajo.Equals(pg2.legajo) || pg1.DNI.Equals(pg2.legajo));
         }
 
         public static bool operator !=(Universitario pg1, Universitario pg2)
@@ -39,7 +39,7 @@ namespace EntidadesAbstractas
 
         public override bool Equals(object obj)
         {
-            return obj is Universitario && this == (Universitario)obj; //???
+            return obj is Universitario && this == (Universitario)obj;
         }
     }
 }

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Serialization;
+using Excepciones;
 
 namespace Archivos
 {
@@ -10,11 +13,39 @@ namespace Archivos
     {
         public bool Guardar(string archivo, T datos)
         {
-            throw new NotImplementedException(); //TODO
+            XmlTextWriter writer = new XmlTextWriter(archivo, Encoding.UTF8);
+            XmlSerializer ser = new XmlSerializer(typeof(T));
+            try
+            {
+                ser.Serialize(writer, datos);
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw new ArchivosException(e);
+            }
+            finally
+            {
+                writer.Close();
+            }
         }
         public bool Leer(string archivo, out T datos)
         {
-            throw new NotImplementedException(); //TODO
+            XmlTextReader reader = new XmlTextReader(archivo);
+            XmlSerializer ser = new XmlSerializer(typeof(T));
+            try
+            {
+                datos = (T)ser.Deserialize(reader);
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw new ArchivosException(e);
+            }
+            finally
+            {
+                reader.Close();
+            }
         }
     }
 }

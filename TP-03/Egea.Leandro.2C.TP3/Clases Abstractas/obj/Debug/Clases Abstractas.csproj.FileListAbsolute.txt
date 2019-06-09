@@ -15,3 +15,12 @@ D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\obj\Debug\Clases
 D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CopyComplete
 D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.dll
 D:\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.pdb
+C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\bin\Debug\Clases Abstractas.dll
+C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\bin\Debug\Clases Abstractas.pdb
+C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\bin\Debug\Excepciones.dll
+C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\bin\Debug\Excepciones.pdb
+C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csprojAssemblyReference.cache
+C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CoreCompileInputs.cache
+C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CopyComplete
+C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.dll
+C:\src\tp_laboratorio_2\TP-03\Egea.Leandro.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.pdb

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Excepciones;
 
@@ -100,38 +101,64 @@ namespace EntidadesAbstractas
 
         public override string ToString()
         {
-            throw new NotImplementedException();//TODO
+            throw new NotImplementedException(); //TODO
         }
 
         private int ValidarDNI(ENacionalidad nacionalidad, int dato)
         {
-            if(dato >= 1 && dato <= 99999999)
+            if (dato >= 1 && dato <= 99999999)
             {
                 if (dato <= 89999999 && !nacionalidad.Equals(ENacionalidad.Argentino))
                 {
-                    throw new NacionalidadInvalidaException(); //TODO mensaje
+                    string mensaje = String.Format("La nacionalidad de los DNI menores a 90.000.000 debe ser argentina. DNI:{0} - Nacionalidad:{1}", dato, nacionalidad);
+                    throw new NacionalidadInvalidaException(mensaje);
                 }
                 else if (dato >= 90000000 && !nacionalidad.Equals(ENacionalidad.Extranjero))
                 {
-                    throw new NacionalidadInvalidaException(); //TODO mensaje
+                    string mensaje = String.Format("La nacionalidad de los DNI mayores a 89.999.999 debe ser extranjera. DNI:{0} - Nacionalidad:{1}", dato, nacionalidad);
+                    throw new NacionalidadInvalidaException(mensaje);
                 }
                 else
                     return dato;
             }
             else
             {
-                throw new NotImplementedException(); //TODO
+                throw new DniInvalidoException("El numero de DNI debe estar entre 1 y 99.999.999");
             }
         }
 
         private int ValidarDNI(ENacionalidad nacionalidad, string dato)
         {
-            throw new NotImplementedException();//TODO
+            int datoEnEntero;
+            if(dato.Length <= 8)
+            {
+                try
+                {
+                    datoEnEntero = Int32.Parse(dato);
+                }
+                catch(Exception e)
+                {
+                    throw new DniInvalidoException(e);
+                }
+                return ValidarDNI(nacionalidad, datoEnEntero);
+            }
+            else
+            {
+                throw new DniInvalidoException("El DNI excede el máximo de caracteres(8)");
+            }
         }
 
         private string ValidarNombreApellido(string dato)
         {
-            throw new NotImplementedException();//TODO
+            Match match = Regex.Match(dato, @"^[a-zA-ZáéíóúÁÉÍÓÚ '-]+$");
+            if (match.Success)
+            {
+                return dato;
+            }
+            else
+            {
+                throw new Exception(String.Format("{0} no es un nombre válido", dato));
+            }
         }
     }
 }

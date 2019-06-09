@@ -18,7 +18,7 @@ namespace EntidadesInstanciables
         private Universidad.EClases claseQueToma;
         private EEstadoCuenta estadoCuenta;
 
-        public Alumno() //???
+        public Alumno()
         {
 
         }

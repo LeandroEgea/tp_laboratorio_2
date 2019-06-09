@@ -17,7 +17,7 @@ namespace EntidadesInstanciables
             random = new Random();
         }
 
-        public Profesor() : this(0, null, null, null, ENacionalidad.Argentino) //TODO Esto esta mal
+        public Profesor()
         {
 
         }
@@ -31,7 +31,9 @@ namespace EntidadesInstanciables
 
         private void _randomClases()
         {
-            throw new NotImplementedException(); //TODO
+            clasesDelDia.Enqueue((Universidad.EClases)random.Next(0, 3));
+            // Sleep ???
+            clasesDelDia.Enqueue((Universidad.EClases)random.Next(0, 3));
         }
 
         protected override string MostrarDatos()
@@ -41,7 +43,7 @@ namespace EntidadesInstanciables
 
         public static bool operator ==(Profesor i, Universidad.EClases clase)
         {
-            return i.clasesDelDia.Contains(clase); //???
+            return i.clasesDelDia.Contains(clase);
         }
 
         public static bool operator !=(Profesor i, Universidad.EClases clase)
@@ -53,7 +55,11 @@ namespace EntidadesInstanciables
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("CLASES DEL DÍA:");
-            sb.AppendLine(clasesDelDia.Dequeue().ToString());
+            //sb.AppendLine(clasesDelDia.Dequeue().ToString());
+            foreach (Universidad.EClases clase in clasesDelDia)
+            {
+                sb.AppendLine(clase.ToString());
+            }
             return sb.ToString();
         }
 
