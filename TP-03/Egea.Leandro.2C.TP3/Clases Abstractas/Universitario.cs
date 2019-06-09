@@ -60,7 +60,7 @@ namespace EntidadesAbstractas
         protected virtual string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(base.ToString());
+            sb.Append(base.ToString());
             sb.AppendFormat("LEGAJO NÚMERO: {0}", legajo);
             sb.AppendLine();
             return sb.ToString();

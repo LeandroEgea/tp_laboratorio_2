@@ -67,7 +67,7 @@ namespace EntidadesInstanciables
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(base.MostrarDatos());
+            sb.Append(base.MostrarDatos());
             sb.AppendFormat("ESTADO DE CUENTA: {0}", estadoCuenta);
             sb.AppendLine();
             sb.AppendLine(ParticiparEnClase());

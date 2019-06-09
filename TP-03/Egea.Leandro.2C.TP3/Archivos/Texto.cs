@@ -18,7 +18,7 @@ namespace Archivos
         /// <returns>Devuelve true si salio todo correctamente. Throws ArchivosException.</returns>
         public bool Guardar(string archivo, string datos)
         {
-            StreamWriter writer = new StreamWriter(archivo, true);
+            StreamWriter writer = new StreamWriter(archivo, false);
             try
             {
                 writer.WriteLine(datos);
