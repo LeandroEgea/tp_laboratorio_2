@@ -1,0 +1,6 @@
+C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\Clases\bin\Debug\Clases.dll
+C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\Clases\bin\Debug\Clases.pdb
+C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\Clases\obj\Debug\Clases.csprojResolveAssemblyReference.cache
+C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\Clases\obj\Debug\Clases.csproj.CoreCompileInputs.cache
+C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\Clases\obj\Debug\Clases.dll
+C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\Clases\obj\Debug\Clases.pdb
