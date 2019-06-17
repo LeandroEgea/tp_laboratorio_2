@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Clases
 {
+    public delegate void DelegadoEstado();//object y eventargs
+
     public class Paquete : IMostrar<Paquete>
     {
         public enum EEstado
@@ -15,12 +18,11 @@ namespace Clases
             Entregado
         }
 
-        //delegado
-
         public string direccionEntrega;
         public EEstado estado;
         public string trackingID;
-        //evento
+
+        public event DelegadoEstado InformaEstado;
 
         public string DireccionEntrega
         {
@@ -66,7 +68,17 @@ namespace Clases
 
         public void MockCicloDeVida()
         {
-            throw new NotImplementedException(); //TODO
+            if(Estado.Equals(EEstado.Ingresado))
+            {
+                Thread.Sleep(4000);
+                Estado = EEstado.EnViaje;
+            }
+            if (Estado.Equals(EEstado.EnViaje))
+            {
+                Thread.Sleep(4000);
+                Estado = EEstado.EnViaje;
+            }
+            //guardar
         }
 
         public string MostrarDatos(IMostrar<Paquete> elemento)
