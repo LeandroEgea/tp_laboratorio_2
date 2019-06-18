@@ -1,0 +1,5 @@
+C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\Entidades\bin\Debug\Entidades.dll
+C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\Entidades\bin\Debug\Entidades.pdb
+C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\Entidades\obj\Debug\Entidades.dll
+C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\Entidades\obj\Debug\Entidades.pdb
