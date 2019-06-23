@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 
 namespace Formulario
 {
     public partial class FrmPpal : Form
     {
+        Correo correo;
         public FrmPpal()
         {
             InitializeComponent();

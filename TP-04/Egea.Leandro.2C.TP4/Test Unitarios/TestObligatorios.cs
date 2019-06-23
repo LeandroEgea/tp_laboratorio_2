@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Clases;
+using Entidades;
 
 namespace Test_Unitarios
 {

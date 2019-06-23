@@ -10,3 +10,16 @@ C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\obj\Debug\MainCorre
 C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\obj\Debug\MainCorreo.csproj.CoreCompileInputs.cache
 C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\obj\Debug\MainCorreo.exe
 C:\zzz\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\obj\Debug\MainCorreo.pdb
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\bin\Debug\MainCorreo.exe.config
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\bin\Debug\MainCorreo.exe
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\bin\Debug\MainCorreo.pdb
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\bin\Debug\Entidades.dll
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\bin\Debug\Entidades.pdb
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\obj\Debug\MainCorreo.csprojAssemblyReference.cache
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\obj\Debug\Formulario.FrmPpal.resources
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\obj\Debug\MainCorreo.Properties.Resources.resources
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\obj\Debug\MainCorreo.csproj.GenerateResource.cache
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\obj\Debug\MainCorreo.csproj.CoreCompileInputs.cache
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\obj\Debug\MainCorreo.csproj.CopyComplete
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\obj\Debug\MainCorreo.exe
+C:\src\tp_laboratorio_2\TP-04\Egea.Leandro.2C.TP4\MainCorreo\obj\Debug\MainCorreo.pdb
