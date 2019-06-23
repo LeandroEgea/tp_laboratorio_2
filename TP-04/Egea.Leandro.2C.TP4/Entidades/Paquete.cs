@@ -18,9 +18,9 @@ namespace Entidades
             Entregado
         }
 
-        public string direccionEntrega;
-        public EEstado estado;
-        public string trackingID;
+        private string direccionEntrega;
+        private EEstado estado;
+        private string trackingID;
 
         public event DelegadoEstado InformaEstado;
 
@@ -68,28 +68,29 @@ namespace Entidades
 
         public void MockCicloDeVida()
         {
-            if(Estado.Equals(EEstado.Ingresado))
-            {
-                Thread.Sleep(4000);
-                Estado = EEstado.EnViaje;
-            }
-            if (Estado.Equals(EEstado.EnViaje))
-            {
-                Thread.Sleep(4000);
-                Estado = EEstado.EnViaje;
-            }
+            //TODO
+
+            //if(Estado.Equals(EEstado.Ingresado))
+            //{
+            //    Thread.Sleep(4000);
+            //    Estado = EEstado.EnViaje;
+            //}
+            //if (Estado.Equals(EEstado.EnViaje))
+            //{
+            //    Thread.Sleep(4000);
+            //    Estado = EEstado.EnViaje;
+            //}
             //guardar
         }
 
         public string MostrarDatos(IMostrar<Paquete> elemento)
         {
-            throw new NotImplementedException(); //TODO
-            //return String.Format("{0} para {1}", p.trackingID, p.direccionEntrega);
+            return String.Format("{0} para {1}", ((Paquete)elemento).TrackingID, ((Paquete)elemento).DireccionEntrega);
         }
 
         public override string ToString()
         {
-            throw new NotImplementedException(); //TODO
+            return MostrarDatos(this);
         }
 
         public static bool operator ==(Paquete p1, Paquete p2)

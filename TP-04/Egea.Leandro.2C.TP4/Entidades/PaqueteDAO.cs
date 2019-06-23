@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -14,13 +15,44 @@ namespace Entidades
 
         static PaqueteDAO()
         {
-            throw new NotImplementedException(); //TODO
+            string connectionStr = @"Data Source=.\SQLEXPRESS; Initial Catalog=Paquetes; Integrated Security = True";
+
+            try
+            {
+                conexion = new SqlConnection(connectionStr);
+                comando = new SqlCommand();
+                comando.CommandType = CommandType.Text;
+                comando.Connection = conexion;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public static bool Insertar(Paquete p)
         {
-            throw new NotImplementedException(); //TODO
-        }
+            bool respuesta = false;
 
+            try
+            {
+                string consulta = String.Format("INSERT INTO Paquetes (direccionEntrega, trackingID, alumno) VALUES ('{0}','{1}','{2}')",
+                    p.DireccionEntrega, p.TrackingID, "Leandro Egea");
+                comando.CommandText = consulta;
+                conexion.Open();
+                comando.ExecuteNonQuery();
+                respuesta = true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                    conexion.Close();
+            }
+            return respuesta;
+        }
     }
 }

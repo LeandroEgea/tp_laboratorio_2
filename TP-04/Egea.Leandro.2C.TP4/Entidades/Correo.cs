@@ -25,25 +25,28 @@ namespace Entidades
 
         public Correo()
         {
-            mockPaquetes = new List<Thread>(); //???
+            mockPaquetes = new List<Thread>();
             Paquetes = new List<Paquete>();
         }
 
         public void FinEntregas()
         {
-            throw new NotImplementedException(); //TODO FinEntregas cerrará todos los hilos activos.
+            foreach (Thread hilo in mockPaquetes)
+            {
+                if (hilo.IsAlive)
+                    hilo.Abort();
+            }
         }
 
         public string MostrarDatos(IMostrar<List<Paquete>> elementos)
         {
-            //StringBuilder sb = new StringBuilder();
-            //foreach(Paquete paquete in elementos)
-            //{
-            //    sb.AppendFormat("{0} para {1} ({2})", paquete.TrackingID, paquete.DireccionEntrega, paquete.Estado.ToString());
-            //}
-            ///////////////////////////////////////////////////////////////////////////////////////////////////
-            //String.Format("{0} para {1} ({2})", p.TrackingID, p.DireccionEntrega, p.Estado.ToString());
-            throw new NotImplementedException(); //TODO
+            StringBuilder sb = new StringBuilder();
+            foreach (Paquete paquete in ((Correo)elementos).Paquetes)
+            {
+                sb.AppendFormat("{0} para {1} ({2})", paquete.TrackingID, paquete.DireccionEntrega, paquete.Estado.ToString());
+                sb.AppendLine();
+            }
+            return sb.ToString();
         }
 
         public static Correo operator +(Correo c, Paquete p)
@@ -51,12 +54,13 @@ namespace Entidades
             foreach (Paquete paquete in c.Paquetes)
             {
                 if (p == paquete)
-                    throw new TrackingIdRepetidoException(""); //TODO message
+                    throw new TrackingIdRepetidoException("El paquete ya se encuentra en la lista");
             }
             c.Paquetes.Add(p);
+            Thread hilo = new Thread(p.MockCicloDeVida);
+            c.mockPaquetes.Add(hilo);
+            hilo.Start();
             return c;
-            //c.Crear un hilo para el método MockCicloDeVida del paquete, y agregar dicho hilo a mockPaquetes.
-            //d.Ejecutar el hilo.
         }
     }
 }
