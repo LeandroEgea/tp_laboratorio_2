@@ -18,5 +18,44 @@ namespace Formulario
         {
             InitializeComponent();
         }
+
+        private void ActualizarEstados()
+        {
+            throw new NotImplementedException(); //TODO
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Paquete paquete = new Paquete(txtDireccion.Text, mtxtTrackingID.Text);
+            paquete.InformaEstado += paq_InformaEstado;
+
+            //TODO
+
+        }
+
+        private void btnMostrarTodos_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException(); //TODO
+        }
+
+        private void FrmPpal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            throw new NotImplementedException(); //TODO
+        }
+
+        private void MostrarInformacion<T>(IMostrar<T> elemento)
+        {
+            throw new NotImplementedException(); //TODO
+        }
+
+        private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException(); //TODO
+        }
+
+        private void paq_InformaEstado(object sender, EventArgs e)
+        {
+            throw new NotImplementedException(); //TODO
+        }
     }
 }

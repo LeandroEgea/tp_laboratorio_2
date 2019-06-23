@@ -137,6 +137,7 @@
             // mtxtTrackingID
             // 
             this.mtxtTrackingID.Location = new System.Drawing.Point(13, 43);
+            this.mtxtTrackingID.Mask = "000-000-0000";
             this.mtxtTrackingID.Name = "mtxtTrackingID";
             this.mtxtTrackingID.Size = new System.Drawing.Size(151, 20);
             this.mtxtTrackingID.TabIndex = 1;
@@ -183,6 +184,7 @@
             this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnMostrarTodos
             // 
@@ -192,19 +194,21 @@
             this.btnMostrarTodos.TabIndex = 4;
             this.btnMostrarTodos.Text = "Mostrar Todos";
             this.btnMostrarTodos.UseVisualStyleBackColor = true;
+            this.btnMostrarTodos.Click += new System.EventHandler(this.btnMostrarTodos_Click);
             // 
             // cmsListas
             // 
             this.cmsListas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mostrarToolStripMenuItem});
             this.cmsListas.Name = "cmsListas";
-            this.cmsListas.Size = new System.Drawing.Size(125, 26);
+            this.cmsListas.Size = new System.Drawing.Size(181, 48);
             // 
             // mostrarToolStripMenuItem
             // 
             this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
-            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mostrarToolStripMenuItem.Text = "Mostrar...";
+            this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
             // 
             // FrmPpal
             // 
@@ -221,6 +225,7 @@
             this.Name = "FrmPpal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Correo UTN por Leandro.Egea.2C";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPpal_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

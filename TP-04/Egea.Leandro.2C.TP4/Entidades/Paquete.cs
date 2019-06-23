@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public delegate void DelegadoEstado();//object y eventargs
+    public delegate void DelegadoEstado(object sender, EventArgs e);
 
     public class Paquete : IMostrar<Paquete>
     {
@@ -68,7 +68,7 @@ namespace Entidades
 
         public void MockCicloDeVida()
         {
-            //TODO
+            throw new NotImplementedException(); //TODO
 
             //if(Estado.Equals(EEstado.Ingresado))
             //{
