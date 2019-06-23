@@ -15,7 +15,7 @@ namespace Entidades
 
         static PaqueteDAO()
         {
-            string connectionStr = @"Data Source=.\SQLEXPRESS; Initial Catalog=Paquetes; Integrated Security = True";
+            string connectionStr = @"Data Source=.\SQLEXPRESS; Initial Catalog=correo-sp-2017; Integrated Security = True";
 
             try
             {
