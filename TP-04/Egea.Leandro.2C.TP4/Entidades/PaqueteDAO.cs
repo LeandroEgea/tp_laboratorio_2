@@ -26,14 +26,13 @@ namespace Entidades
             }
             catch (Exception e)
             {
-                throw e;
+                throw new Exception("Se produjo un error en la conexion con la base de datos", e);
             }
         }
 
         public static bool Insertar(Paquete p)
         {
             bool respuesta = false;
-
             try
             {
                 string consulta = String.Format("INSERT INTO Paquetes (direccionEntrega, trackingID, alumno) VALUES ('{0}','{1}','{2}')",
@@ -45,7 +44,9 @@ namespace Entidades
             }
             catch (Exception e)
             {
-                throw e;
+                string message = String.Format("Se produjo un error al intentar guardar el paquete {0} en la base de datos",
+                    p.ToString());
+                throw new Exception(message, e);
             }
             finally
             {

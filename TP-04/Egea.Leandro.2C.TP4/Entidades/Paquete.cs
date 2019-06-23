@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public delegate void DelegadoEstado(object sender, EventArgs e);
 
     public class Paquete : IMostrar<Paquete>
     {
@@ -22,7 +21,10 @@ namespace Entidades
         private EEstado estado;
         private string trackingID;
 
+        public delegate void DelegadoEstado(object sender, EventArgs e);
+        public delegate void DelegadoSQLException(Exception e);
         public event DelegadoEstado InformaEstado;
+        public event DelegadoSQLException InformaSQLException;
 
         public string DireccionEntrega
         {
@@ -62,25 +64,27 @@ namespace Entidades
 
         public Paquete(string direccionEntrega, string trackingID)
         {
+            Estado = EEstado.Ingresado;
             DireccionEntrega = direccionEntrega;
             TrackingID = trackingID;
         }
 
         public void MockCicloDeVida()
         {
-            throw new NotImplementedException(); //TODO
-
-            //if(Estado.Equals(EEstado.Ingresado))
-            //{
-            //    Thread.Sleep(4000);
-            //    Estado = EEstado.EnViaje;
-            //}
-            //if (Estado.Equals(EEstado.EnViaje))
-            //{
-            //    Thread.Sleep(4000);
-            //    Estado = EEstado.EnViaje;
-            //}
-            //guardar
+            while (Estado != EEstado.Entregado)
+            {
+                Thread.Sleep(4000);
+                Estado += 1;
+                InformaEstado(this, null);
+            } 
+            try
+            {
+                PaqueteDAO.Insertar(this);
+            }
+            catch (Exception e)
+            {
+                InformaSQLException(e);
+            }
         }
 
         public string MostrarDatos(IMostrar<Paquete> elemento)

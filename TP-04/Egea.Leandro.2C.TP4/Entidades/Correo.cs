@@ -54,7 +54,10 @@ namespace Entidades
             foreach (Paquete paquete in c.Paquetes)
             {
                 if (p == paquete)
-                    throw new TrackingIdRepetidoException("El paquete ya se encuentra en la lista");
+                {
+                    string message = String.Format("El tracking ID {0} ya figura en la lista de envios", p.TrackingID);
+                    throw new TrackingIdRepetidoException(message);
+                }
             }
             c.Paquetes.Add(p);
             Thread hilo = new Thread(p.MockCicloDeVida);

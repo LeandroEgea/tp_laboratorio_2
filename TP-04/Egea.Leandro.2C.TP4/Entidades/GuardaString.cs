@@ -15,14 +15,14 @@ namespace Entidades
         {
             try
             {
-                string path = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) + archivo; //???
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\" + archivo;
                 sw = new StreamWriter(path, true);
                 sw.WriteLine(texto);
                 return true;
             }
             catch (Exception e)
             {
-                throw e;
+                throw new Exception("Se produjo un error al intentar guardar el archivo", e);
             }
             finally
             {
