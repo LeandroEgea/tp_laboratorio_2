@@ -23,12 +23,18 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Inicializa la lista de hilos y la lista de paquetes
+        /// </summary>
         public Correo()
         {
             mockPaquetes = new List<Thread>();
             Paquetes = new List<Paquete>();
         }
 
+        /// <summary>
+        /// cerrará todos los hilos activos.
+        /// </summary>
         public void FinEntregas()
         {
             foreach (Thread hilo in mockPaquetes)
@@ -38,6 +44,11 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Muestra la información del Correo.
+        /// </summary>
+        /// <param name="elementos">Correo a mostrar</param>
+        /// <returns>String con la info del correo</returns>
         public string MostrarDatos(IMostrar<List<Paquete>> elementos)
         {
             StringBuilder sb = new StringBuilder();
@@ -49,6 +60,16 @@ namespace Entidades
             return sb.ToString();
         }
 
+        /// <summary>
+        /// En el operador +:
+        /// a.Controlar si el paquete ya está en la lista.En el caso de que esté, se lanzará la excepción TrackingIdRepetidoException.
+        /// b.De no estar repetido, agregar el paquete a la lista de paquetes.
+        /// c.Crear un hilo para el método MockCicloDeVida del paquete, y agregar dicho hilo a mockPaquetes.
+        /// d.Ejecutar el hilo.
+        /// </summary>
+        /// <param name="c">correo</param>
+        /// <param name="p">paquete</param>
+        /// <returns>Devuelve el Correo con los cambios</returns>
         public static Correo operator +(Correo c, Paquete p)
         {
             foreach (Paquete paquete in c.Paquetes)
